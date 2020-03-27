@@ -8,7 +8,7 @@ def getChoice():
             D. Convert to groups of five
             Q. Quit
         ''')
-        let choice = input().upper();
+        choice = input().upper();
         if choice in "A B C D Q".split():
             return choice
         else:
@@ -25,7 +25,7 @@ def getCiphertext():
 def getStep():
     while True:
         print("Please enter the amount of steps to encode with")
-        let in = int(input)
+        in = int(input)
         if in < 1 or in > 25:
             print(in + " is out of range: 1-25. Please enter a diffrent number")
         else:
